@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Tracker</title>
+  </head>
+  <body>
+    <section class="your-money-section">
+      <h1>Your Money:</h1>
+      <ul class="accounts-list"></ul>
+      <h2>Total Portfolio Value:</h2>
+      <h3 class="total-portfolio-value">2785</h3>
+    </section>
+    <section class="transaction-input-section">
+      <div class="expense-div">
+        <!-- expense -->
+        <h3>Add Expense</h3>
+        <label for="expense-amount">Expense Amount</label>
+        <select name="account-select" id="account-select-expense"></select>
+        <input type="number" id="expense-amount" name="expense-amount" />
+        <button class="submit-expense">Submit</button>
+      </div>
+      <div class="income-div">
+        <!-- income -->
+        <h3>Add Income</h3>
+        <label for="income-amount">Expense Amount</label>
+        <select name="account-select" id="account-select-income"></select>
+        <input type="number" id="income-amount" name="income-amount" />
+        <button class="submit-income">Submit</button>
+      </div>
+    </section>
+    <section>
+      <h2>Your Expenses</h2>
+      <ul class="expense-list"></ul>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
