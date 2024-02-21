@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    max-width: 60%;
+}
+
+h1,h2{
+    margin: 10px 0;
+    margin-top: 30px;
+}
+
+.createAccount{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.createAccount input, .createAccount button{
+    flex-grow: 1;
+    margin: 5px 0;
+}
+
+.createAccount label{
+    flex-basis: 100%;
+}
+
+.accounts-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.accounts-list li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accounts-list button, .accounts-list input{
+    flex-basis: 100%;
+    margin: 5px 0;
+}
+
+.accounts-list li{
+    padding: 20px 0;
+}
+.delete-account-button{
+    margin: 10px 0;
+}
+
+.portfolio-value{
+    margin-bottom: 30px;
+}
+
+.add-transaction-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-transaction-section button, .add-transaction-section label, .add-transaction-section input, .add-transaction-section select{
+    flex-basis: 100%;
+    margin: 5px 0;
+}
+
+.transactions-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.transactions-list li{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.transactions-list li button{
+    margin: 10px 0;
+}

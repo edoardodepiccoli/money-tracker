@@ -4,36 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Money Tracker</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="your-money-section">
       <h1>Your Money:</h1>
+      <div class="createAccount">
+        <label for="newAccount">Create account</label>
+        <input type="text" class="new-account-name" />
+        <input type="number" class="new-account-amount" />
+        <button class="create-account-button">Create account</button>
+      </div>
+      <h2>Account List</h2>
       <ul class="accounts-list"></ul>
       <h2>Total Portfolio Value:</h2>
-      <h3 class="total-portfolio-value">2785</h3>
+      <h3 class="portfolio-value">0</h3>
     </section>
-    <section class="transaction-input-section">
-      <div class="expense-div">
-        <!-- expense -->
-        <h3>Add Expense</h3>
-        <label for="expense-amount">Expense Amount</label>
-        <select name="account-select" id="account-select-expense"></select>
-        <input type="number" id="expense-amount" name="expense-amount" />
-        <button class="submit-expense">Submit</button>
-      </div>
-      <div class="income-div">
-        <!-- income -->
-        <h3>Add Income</h3>
-        <label for="income-amount">Expense Amount</label>
-        <select name="account-select" id="account-select-income"></select>
-        <input type="number" id="income-amount" name="income-amount" />
-        <button class="submit-income">Submit</button>
-      </div>
+    <section class="add-transaction-section">
+      <label for="transaction">Add Transaction</label>
+      <select
+        name="account-select"
+        id="account-select"
+        class="account-select"
+      ></select>
+      <select name="transaction-type" id="transaction-type">
+        <option value="expense">expense</option>
+        <option value="income">income</option>
+      </select>
+      <input type="number" class="transaction-amount" />
+      <input type="text" class="transaction-description" />
+      <button class="submit-button">Submit</button>
     </section>
     <section>
-      <h2>Your Expenses</h2>
-      <ul class="expense-list"></ul>
+      <h2>Transactions</h2>
+      <ul class="transactions-list"></ul>
     </section>
+
     <script src="app.js"></script>
   </body>
 </html>
